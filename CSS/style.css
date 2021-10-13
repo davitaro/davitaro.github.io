@@ -7,7 +7,7 @@ html{
     box-sizing:inherit;
 }
 body:not[nav]{
-    font-family:'Lato';
+    font-family:'Lato',cursive;
     font-size:1.2rem;
     background-color:white;
     letter-spacing: 0;
@@ -107,6 +107,11 @@ a:link{
  {
     text-align:left;
     line-height:10mm;
+    margin-right:3rem;
+    margin-left:3rem;
+    padding:1rem;
+    font-family:'Lato',cursive;
+    font-size:2rem;
  }
 
  #myid{
