@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href= "CSS/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="about.html"> about</a></li>
+            <li><a href="hobbies.html"> Hobbies</a></li>
+            <li><a href="textbookmarkup.html"> Textbook</a></li>
+            <li><a href="contactform.html">Contact</a><li>
+
+        </ul>
+    </nav>
+    <div class="wrapper">
+
+		<aside>
+			<h3>My Location</h3>
+			<address>
+				The Rosenbloom Household &middot;
+				67 חטיבת הראל &middot;
+				דירה 4 &middot;
+				כרמיאל, ישראל
+			</address>
+			<map>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.8188291775773!2d35.2851299!3d32.902958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c33f5f5936ded%3A0x30b77bb9577ee8e8!2sHativat%20Harel%20St%2067%2C%20Karmiel!5e0!3m2!1sen!2sil!4v1634140163454!5m2!1sen!2sil" width="200" height="300" allowfullscreen="" style="border:10;" loading="lazy"></iframe>
+			</map>
+		</aside>
+
+		<section>
+			<h1>Contact</h1>
+
+			<p>Fill out the form below to share your thoughts, questions, or suggestions.</p>
+
+			<form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES" method="POST">
+
+				<input type="hidden"  name="send_to" value="davitarosenbloom@gmail.com">
+			
+			<fieldset>
+
+				<legend>Your contact information</legend>
+
+				<label for="name">Your name </label>
+				<input type="text" id="name" name="name">
+
+				<label for="phone">Phone number</label>
+				<input type="tel" id="phone" name="phone" placeholder="Don't forget your area code!">
+
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email">
+			
+			</fieldset>
+
+			<fieldset>
+
+			<legend>When would you like to visit? </legend>
+
+			<label for="date"> Requested  date</label>
+			<input type="date" id="date" name="date">
+
+			<label for="qty">How many people would you like abducted?</label>
+			<input type="number" id="qty" name="qty" min="1" max="10">
+
+
+			<p>What kind of visit are you interested in?</p>
+
+		<label>
+			<input type= "radio" name="uftotype" value="full" checked>Full Shabbos (eating and sleeping)
+		</label>
+
+		<label>
+			<input type= "radio" name="uftotype" value="first">Friday night (meal)
+		</label> 
+
+		<label> 
+			<input type= "radio" name="uftotype" value="second">Shabbos day (meal)
+		</label>
+
+		<label> 
+			<input type= "radio" name="uftotype" value="third">Seudah Shlishit (meal)
+		</label> 
+
+		<label> 
+			<input type= "radio" name="uftotype" value="sleeping">Sleeping only
+		</label> 
+		
+
+
+			<label for="abtype">What is your favorite animal?</label>
+
+		<select id="abtype" name="abtype">
+
+			<option selected>Select one...</option>
+
+			<option value="tour"> Carp</option>
+
+			<option value="dinner" >Turtle</option>
+
+			<option value="dance">
+			Cougar</option>
+
+			<option value="whale">Frog</option>
+
+		</select>
+
+			
+
+		<label>
+			
+
+			<label for="comments">Comments, questions, suggestions:</label>
+
+			<textarea id="comments" name="comments" placeholder="tell me everything" maxlength="400"></textarea> 
+
+			<input type="checkbox"value="subscribe" name="subscribe"  checked> Add me to your email list! </label> 
+
+		</fieldset>
+
+		<button type="submit">Submit your abduction experience request!</button> 
+
+			</form>	
+
+		</section>
+
+		
+	</div>
+	<script src="../js/forms.js"></script>
+</body>
+</html>
